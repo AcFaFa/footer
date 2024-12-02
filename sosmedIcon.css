@@ -1,0 +1,137 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #111;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    color: #666;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #fff;
+}
+
+.divider {
+    color: #666;
+    font-size: 18px;
+}
+
+.footer-menu {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-menu a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #fff;
+}
+
+.footer-logo {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.footer-logo:hover {
+    color: #fff;
+}
+
+
+/* Media Queries */
+
+
+/* 320px - Smallest screen size */
+
+@media (max-width: 320px) {
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .divider {
+        display: none;
+        /* Hide dividers on small screens */
+    }
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-logo {
+        font-size: 12px;
+        /* Smaller logo text */
+    }
+}
+
+
+/* 540px - Medium screen size */
+
+@media (min-width: 321px) and (max-width: 540px) {
+    .social-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13px;
+        /* Adjust font size */
+    }
+    .footer-logo {
+        font-size: 14px;
+        /* Slightly smaller logo */
+    }
+}
+
+
+/* 720px - Larger screen size */
+
+@media (min-width: 541px) and (max-width: 720px) {
+    .social-icons {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .footer-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    .footer-logo {
+        font-size: 16px;
+    }
+}
