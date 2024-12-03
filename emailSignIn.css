@@ -1,0 +1,158 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d3725;
+}
+
+.footer {
+    color: #ffffff;
+    padding: 20px;
+    background-color: #1d3725;
+}
+
+.newsletter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #1d3725;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.main-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.main-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-links ul li {
+    margin-bottom: 5px;
+}
+
+.main-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.region-select select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 769px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .social-icons a {
+        font-size: 20px;
+    }
+    .main-links ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 540px) {
+    .newsletter p {
+        font-size: 16px;
+    }
+    .social-icons a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .social-icons a {
+        font-size: 16px;
+    }
+    .newsletter p {
+        font-size: 14px;
+    }
+    .footer-bottom p,
+    .footer-bottom ul li a {
+        font-size: 10px;
+    }
+}
